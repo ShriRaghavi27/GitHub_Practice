@@ -21,7 +21,7 @@ public class Assignment1_Navigation {
 	
 	driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Clothes",Keys.ENTER);
 	
-	driver.close();
+	driver.quit();
 	}
 
 }
