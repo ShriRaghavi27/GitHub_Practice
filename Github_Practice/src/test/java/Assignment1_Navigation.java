@@ -12,7 +12,7 @@ public class Assignment1_Navigation {
 	public static void main(String[] args) {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	
+	System.out.println("www.google.com");
 	driver.get("https://www.google.com/");
 	driver.navigate().to("https://www.amazon.in/");
 	
@@ -22,6 +22,7 @@ public class Assignment1_Navigation {
 	driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Clothes",Keys.ENTER);
 	
 	driver.quit();
+	
 	}
 
 }
